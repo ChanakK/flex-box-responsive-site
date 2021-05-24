@@ -14,12 +14,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 /* Typography */
 
 body {
   font-size: 1.125rem;
+  color: var(--color--primary);
 }
 
 h1 {
@@ -34,8 +36,55 @@ h2 {
 
 h1 {
   color: var(--color--dark);
+  text-align: center;
+  margin: 1em 0;
 }
 
 .heading__text--accent {
   color: var(--color--accent);
+}
+
+
+/* Layout */
+
+.container {
+ 
+  width: 95%;
+  max-width:980px;
+  margin: 0 auto;
+
+}
+
+.columns {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.col-1 {
+  width: 20%;
+
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 75%;
+}
+
+
+.col--bg {
+  background: var(--color--dark);
+  color: var(--color--accent-complimentary);
+  padding: 1em ;
+}
+
+
+
+img {
+  max-width: 100%;
 }
