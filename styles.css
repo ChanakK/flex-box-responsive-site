@@ -1,3 +1,13 @@
+/* CSS variables */
+:root {
+  --color--primary:#707070;
+  --color--dark:#312614;
+  --color--accent:#b7832f;
+  --color--accent-complimentary:#ffffff;
+
+}
+
+/* Setting defaults */
 *,
 *::before,
 *::after {
@@ -5,3 +15,18 @@
   margin: 0;
   padding: 0;
 }
+
+/* Typography */
+
+body {
+  font-size: 1.125rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
