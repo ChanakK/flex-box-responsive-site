@@ -1,10 +1,9 @@
 /* CSS variables */
 :root {
-  --color--primary:#707070;
-  --color--dark:#312614;
-  --color--accent:#b7832f;
-  --color--accent-complimentary:#ffffff;
-
+  --color--primary: #707070;
+  --color--dark: #312614;
+  --color--accent: #b7832f;
+  --color--accent-complimentary: #ffffff;
 }
 
 /* Setting defaults */
@@ -14,7 +13,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 /* Typography */
@@ -44,46 +42,51 @@ h1 {
   color: var(--color--accent);
 }
 
-
 /* Layout */
 
 .container {
- 
   width: 95%;
-  max-width:980px;
+  max-width: 980px;
   margin: 0 auto;
-
 }
 
 .columns {
   margin: 1em 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
-
-.col-1 {
-  width: 20%;
-
-}
-
-.col-2 {
-    width: 45%;
-}
-
+.col-1,
+.col-2,
 .col-3 {
-    width: 75%;
+  margin: 1em 0;
+  padding: 0 0.5em;
 }
 
+@media screen and (min-width: 800px) {
+  .columns {
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .col-1 {
+    width: 20%;
+  }
+
+  .col-2 {
+    width: 45%;
+  }
+
+  .col-3 {
+    width: 75%;
+  }
+}
 
 .col--bg {
   background: var(--color--dark);
   color: var(--color--accent-complimentary);
-  padding: 1em ;
+  padding: 1em;
 }
-
-
 
 img {
   max-width: 100%;
